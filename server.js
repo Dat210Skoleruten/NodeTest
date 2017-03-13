@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+console.log("I am running so hot right now");
 app.get('/data', function(req, res){
   //res.sendFile(path.join(__dirname + '/index.html'));
   res.send('hello world with data'); //replace with your data here
