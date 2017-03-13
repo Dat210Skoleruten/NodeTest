@@ -13,7 +13,12 @@
  var port = process.env.PORT || 1337;
  http.createServer(function(req, res) {
    res.writeHead(200, { 'Content-Type': 'text/plain' });
-   res.sendFile(path.join(__dirname + '/index.html'));
-   res.end('Hello World\n');
+   response.writeHead(301,
+  {Location: 'http://nodeskoleruter.azurewebsites.net/index.html'}
+  );
+  res.end();
+
+
+ //  res.end('Hello World\n');
    
  }).listen(port);
